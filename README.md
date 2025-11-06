@@ -1,6 +1,6 @@
 # narou-mod-docker
 
-このリポジトリは、[narou-mod](https://github.com/narou-mod/narou-mod) を Docker コンテナ上で動作させるための`Dockerfile` および関連ファイルを提供しています。
+このリポジトリは、[narou-mod](https://github.com/ponponusa/narou-mod) を Docker コンテナ上で動作させるための`Dockerfile` および関連ファイルを提供しています。
 
 > ponponusa が運用している家庭用NAS（Synology DS415+)では、compose が利用できないので、単一の `Dockerfile` を使ってイメージをビルドし、コンテナを起動する方法を採用しています。
 
