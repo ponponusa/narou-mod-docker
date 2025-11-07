@@ -33,6 +33,8 @@ Windows 11 の PowerShell 上でこの `Dockerfile` を使ってイメージを�
 
 -----
 
+## ＞ `run.ps1` スクリプトを使ってビルド・起動する場合
+
 ### ステップ1: PowerShell で Dockerfile の場所に移動
 
 まず、PowerShell を起動し、`Dockerfile` を保存したフォルダに `cd` コマンドで移動します。
@@ -53,6 +55,26 @@ cd C:\docker\narou
 HOST_NOVEL_PATH="C:\my-novels"
 HOST_P1=33000
 HOST_P2=33001
+```
+
+### ステップ3: `run.ps1` スクリプトを実行してビルド・起動
+
+```powershell
+# 例: run.ps1 スクリプトを実行
+.\run.ps1
+```
+
+-----
+
+## ＞ 自分で`docker build` と `docker run` を実行する場合
+
+### ステップ1: PowerShell で Dockerfile の場所に移動
+
+まず、PowerShell を起動し、`Dockerfile` を保存したフォルダに `cd` コマンドで移動します。
+
+```powershell
+# 例: C:\docker\narou フォルダに Dockerfile がある場合
+cd C:\docker\narou
 ```
 
 ### ステップ2: イメージのビルド (docker build)
@@ -116,3 +138,9 @@ docker stop narou-mod-app
 
 # 削除 (名前指定)
 docker rm narou-mod-app
+```
+
+## License
+
+- 本ソフトウェアを利用（入手、インストール、実行等）した時点で、[利用規約・免責事項](https://github.com/ponponusa/narou-mod-docker/blob/develop/TERMS_AND_DISCLAIMER.md)に同意したものとみなします。ご利用の前に必ず内容をご確認ください。
+- This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
