@@ -1,6 +1,6 @@
 # narou-mod-docker
 
-このリポジトリは、[narou-mod](https://github.com/narou-mod/narou-mod) を Docker コンテナ上で動作させるための`Dockerfile` および関連ファイルを提供しています。
+このリポジトリは、[narou-mod](https://github.com/ponponusa/narou-mod) を Docker コンテナ上で動作させるための`Dockerfile` および関連ファイルを提供しています。
 
 > ponponusa が運用している家庭用NAS（Synology DS415+)では、compose が利用できないので、単一の `Dockerfile` を使ってイメージをビルドし、コンテナを起動する方法を採用しています。
 
@@ -15,7 +15,7 @@
 ## Docker内のソフトウェア構成
 
 - [Ruby:3.4.7-slim-bookworm](https://hub.docker.com/_/ruby)
-- [Azlu Zulu JDK 21](https://www.azul.com/downloads/?package=jdk#zulu)
+- [Azlu Zulu JDK 21](https://www.azul.com/downloads/?version=java-21-lts&os=debian&package=jdk#zulu)
 - [narou-mod](https://github.com/ponponusa/narou-mod)
 - [改造版AozoraEpub3](https://github.com/kyukyunyorituryo/AozoraEpub3)
 - [kindlegen](https://archive.org/details/kindlegen2.9)
